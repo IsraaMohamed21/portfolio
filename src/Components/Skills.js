@@ -1,8 +1,8 @@
 export default function Skills() {
   return (
     <div>
-      <h2>
-         Skills
+      <h2 style={{padding:"30px"}}>
+         My Skills
       </h2>
       <div className="skills">
               <div className="skills-card">

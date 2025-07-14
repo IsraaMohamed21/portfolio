@@ -249,3 +249,81 @@ h2{
 .card-item{
   float: left;
 }
+
+/* موبايلات */
+@media (max-width: 768px) {
+  .container {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .navbar ul {
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar ul li {
+    padding: 10px;
+  }
+
+  .caption {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .caption .Myimg {
+    width: 80%;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .caption .myInfo {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 90%;
+   margin-left: 30px;
+  }
+
+  .cont {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+ .h-contact{
+    margin: 0px;
+ }
+  .contact-card {
+    width: 50%;
+    height: auto;
+    margin-top: -100px;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    padding-top: 100px;
+  }
+.projects h2{
+  padding-bottom: 0px;
+  padding-top: 40px;
+}
+  .project-card {
+    width: 60%;
+  }
+}
