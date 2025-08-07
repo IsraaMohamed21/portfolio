@@ -12,7 +12,6 @@ html {
     justify-content:center;
     justify-items: center;
     background-color:#000000 ;
-    position: fixed;
     width: 100%;
 }
 .navbar{
@@ -20,8 +19,12 @@ html {
   color: #F6F6F6;
   font-family: "Oswald";
   font-size: 16px;
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
+  width: 100vw;
+   display: flex;
+  justify-content: center;
 }
 .navbar ul{
   list-style: none;
@@ -38,16 +41,19 @@ html {
 .navbar ul li a:hover{
   color: #7dc5af;
 }
-.container .social ul{
+
+.social ul{
   list-style: none;
   display: flex;
-  margin-right: 25px;
+  margin-left: -55px;
 }
-.container .social ul li{
+.social ul li{
   padding: 20px;
 }
-.container .social ul li a img{
-  width: 25px ;
+.social ul li a img{
+  width: 45px ;
+   border-radius: 10px;
+
 }
 .caption {
   display: flex;
@@ -57,7 +63,6 @@ html {
   height: 100VH;
 }
 .caption .Myimg{
-  
   background-color: #7dc5af;
   width: 30%;
 }
@@ -96,7 +101,7 @@ html {
   font-family: "Oswald";
   color: #F6F6F6;
   font-size: 20px;
-  height: 70vh;
+  height: 82vh;
   display: flex;
   scroll-margin-top: 80px;
 }
@@ -105,28 +110,64 @@ h2{
   font-size: 40px;
   color: #F6F6F6;
   font-family: "Oswald";
-  padding: 20px;
+  padding: 20px 0px;
+}
+.about-img{
+  text-align: center;
+  padding: 50px;
+  margin-top: 30px;
+}
+.about-img img{
+  width: 100%;
 }
 
-.about .sideBar{
-  width:9px;
-  height: 330px;
-  background-color: #7dc5af;
-  border-radius: 30px;
-  margin: 10px;
-}
 .about .content{
   text-align: left;
-  height: 250px;
-  padding: 25px;
-  background-color: rgba(125, 197, 176, 0.2);
-  border-radius: 50px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-  padding-top: 80px;
+  position: absolute;
+  right: 130px;
+  margin-top: -50px;
 }
-.content:hover{
-  transform: scale(1.03);
+.about .content h2{
+  margin-bottom: -10px;
+}
+.about-nav {
+  padding: 20px;
+  position: relative;
+  bottom: -94px;
+  width: 400px;
+}
+
+.about-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  margin-bottom: 0px;
+}
+.about-nav-links li {
+  width: 50px;
+}
+.about-nav-links li button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px 15px;
+  transition: 0.3s;
+  width: 100px;
+}
+
+.about-nav-links li button:hover {
+  color: #7dc5af;
+  border-bottom: 2px solid #7dc5af;
+}
+
+.about-content {
+  border-radius: 10px;
+  font-size: 15px;
+}
+#skills{
+  display: flex;
 }
  .projects {
   display: flex;
@@ -138,6 +179,7 @@ h2{
   min-height: 50vh;
   font-family: "Oswald", sans-serif;
   color: #F6F6F6;
+  height: 80vh;
 }
 
 .project-card {
@@ -148,7 +190,9 @@ h2{
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease;
 }
-
+.project-card img{
+  width: 100%;
+}
 .project-card:hover {
   transform: scale(1.03);
 }
@@ -156,7 +200,7 @@ h2{
 .project-card h2 {
   font-size: 24px;
   margin-top: -5px;
-  margin-bottom: 15px;
+  margin-bottom: -20px;
   color: #7dc5af;
   height: 100px;
 }
@@ -217,38 +261,68 @@ h2{
   gap: 60px;
   height: 70vh;
 }
+.connect-header{
+  text-align: left;
+  font-size: 30px;
+  padding-left: 55px;
+  margin-bottom: -70px;
+}
 .contact{
     font-size: 23px; 
     padding: 60px 20px;
-    color: #7dc5af;
+    color: #4c5251;
+    margin-left: 40px;
 }
-.contact-card{
-  background-color: rgba(125, 197, 176, 0.2);
-  border-radius: 20px;
-  width: 40%;
-  height: 370px;
-  justify-content: center;
-  padding: 20px 50px;
-  line-height: 22px;
-  background-color: rgba(125, 197, 176, 0.2);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition:  0.3s ease;
+
+form {
+  width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.contact-card:hover{
-   transform: scale(1.03);
+label {
+  font-size: 20px;
 }
-.contact-card a{
-   text-decoration: none;
-  color: #F6F6F6;
+
+input, textarea {
+  padding: 8px;
   font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  width: 100%;
 }
-.contact-card h3{
-  color: #7dc5af;
-  font-size: 24px;
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7dc5af;
+  box-shadow: 0 0 20px rgba(38, 255, 190, 0.4);
+  background-color: #f9fdfc;
 }
-.card-item{
-  float: left;
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
 }
+
+button {
+  padding: 20px;
+  background-color: #7dc5af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 520px;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #68b29b;
+}
+
 
 /* موبايلات */
 @media (max-width: 768px) {
@@ -274,13 +348,16 @@ h2{
   }
 
   .caption .Myimg {
-    width: 80%;
-    margin: 0;
-    margin-top: 30px;
+    width: 78%;
+    margin-top: -20px;
+  }
+  .caption .Myimg img{
+    margin-bottom: 20px;
   }
 
   .caption .myInfo {
     margin: 30px;
+    padding-top: 2px;
     text-align: center;
   }
 

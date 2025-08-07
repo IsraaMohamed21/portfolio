@@ -1,25 +1,33 @@
 export default function Skills() {
   return (
-    <div>
-      <h2 style={{padding:"30px"}}>
-         My Skills
-      </h2>
-      <div className="skills">
-              <div className="skills-card">
-       <h3>Front-end Technologies:</h3> React.js "Components, Props, Hooks, Routing" 
-       <h3>Front-end Tools</h3> Bootstrap, HTML5,
-        CSS/CSS3, Responsive Web Design and UI/UX Design 
-        <h3>Programming Languages:</h3>
-        JavaScript, C, Python 
-      </div>
-      <div className="skills-card">
-        <h3>Software Development Principles:</h3> SOLID
-        principles, Object-Oriented Programming (OOP), Data Structures and Algorithms
-         <h3>Version Control:</h3> git & GitHub 
-        <h3>Databases:</h3> Microsoft SQL Server, SQL 
-      </div>
-      </div>
-
+    <div id="skills">
+      <ul>
+        Front-end Technologies
+        <ul>
+          <li> React.js</li>
+          <li>JavaScript ES6</li>
+          <li>Html & Css</li>
+          <li>Responsive Web Design</li>
+          <li>Bootstrap, Tailwend & Material UI</li>
+        </ul>
+        Software Development Principles
+        <ul>
+          <li>SOLID principles</li>
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+      </ul>
+      <ul>
+        Version Control
+        <ul>
+          <li>git & GitHub </li>
+        </ul>
+        Databases
+        <ul>
+          <li>Microsoft SQL Server, SQL</li>
+        </ul>
+      </ul>
     </div>
   );
 }
