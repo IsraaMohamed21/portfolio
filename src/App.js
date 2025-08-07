@@ -20,9 +20,9 @@ function App() {
 <section id="projects" style={{ scrollMarginTop: '80px' }}>
         <Projects />
       </section>
-      <section id="skills" style={{ scrollMarginTop: '80px' }}>
+      {/* <section id="skills" style={{ scrollMarginTop: '80px' }}>
         <Skills />
-      </section>
+      </section> */}
       <section id="contact" style={{ scrollMarginTop: '80px' }}>
         <Contact />
       </section>
