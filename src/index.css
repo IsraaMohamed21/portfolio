@@ -348,7 +348,7 @@ button:hover {
     flex-direction: column;
     height: auto;
     text-align: center;
-    padding-top: -130px;
+    padding-top: -80px;
   }
   .caption .myInfo{
     width: 90%;
@@ -356,7 +356,6 @@ button:hover {
   .caption .Myimg {
     margin-left: 50px;
     width: 70%;
-    height: 600px;
   }
   .caption .Myimg img{
     margin-bottom: 10px;
