@@ -145,13 +145,15 @@ h2{
 }
 .about-nav-links li {
   width: 50px;
+  text-align: left;
 }
 .about-nav-links li button {
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 400;
   cursor: pointer;
-  color: #333;
+  color: #4b4b4b;
   padding: 10px 15px;
   transition: 0.3s;
   width: 100px;
@@ -167,7 +169,11 @@ h2{
   font-size: 15px;
 }
 #skills{
+  width: 700px;
   display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  
 }
  .projects {
   display: flex;
@@ -323,84 +329,163 @@ button:hover {
   background-color: #68b29b;
 }
 
-
-/* موبايلات */
+/* موبايل - شاشات أقل من 768px */
 @media (max-width: 768px) {
-  .container {
-    /* flex-direction: column; */
-    align-items: center;
-  }
-
   .navbar ul {
-    /* flex-direction: column; */
     align-items: center;
-    padding: 0;
   }
 
   .navbar ul li {
     padding: 10px;
+    
   }
 
   .caption {
     flex-direction: column;
-    align-items: center;
-    height: auto;
+    height: 100vh;
+    text-align: center;
+    padding-top: 180px;
   }
-
+  .caption .myInfo{
+    width: 90%;
+  }
   .caption .Myimg {
-    width: 78%;
-    margin-top: -20px;
+    margin-top: -88px;
+    margin-left: 70px;
+    width: 70%;
+
   }
   .caption .Myimg img{
     margin-bottom: 20px;
   }
 
   .caption .myInfo {
-    margin: 30px;
-    padding-top: 2px;
-    text-align: center;
+    margin: 30px 40px;
+    padding-top: 20px;
   }
-
+  .caption .myInfo button{
+    margin-top: -12px;
+  }
   .about {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 100px;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    }
+
+  .about-img,
+  .about .content {
+    position: static;
+    width: 90%;
+    margin-left: 37px;
+  }
+  .about .content{
+    margin-top: -120px;
+  }
+  .about-nav {
+    flex-direction:row;
+    width: 100%;
+    padding: 10px;
+    margin-top: -30px;
+    bottom: 0;
+  }
+
+  .about-nav-links {
+    gap: 50px;
+  }
+  #skills ul{
+    font-size: 12px;
+    width: 70px;
+  }
+  .projects {
+    flex-direction: column;
+    height: auto;
+
+  }
+  .projects h2{
+    margin-bottom: -10px;
   }
 
   .skills {
     flex-direction: column;
     align-items: center;
     height: auto;
+    padding: 20px;
+  }
+
+  .skills .skills-card {
     width: 90%;
-   margin-left: 30px;
+    margin-bottom: 20px;
   }
 
   .cont {
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-  }
- .h-contact{
-    margin: 0px;
- }
-  .contact-card {
-    width: 50%;
-    height: auto;
-    margin-top: -100px;
+    height: 100vh;
+    gap: 30px;
+    padding: 20px;
   }
 
-  .projects {
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 10px;
-    padding-top: 100px;
+  form {
+    width: 100%;
+    margin-top: -90px;
+    margin-left: -10px;
   }
-.projects h2{
-  padding-bottom: 0px;
-  padding-top: 40px;
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  .connect-header {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .contact {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .social ul{
+    margin-left: 30px;
+  }
+  .social ul li img{
+   width: 30%; 
+  }
 }
-  .project-card {
-    width: 60%;
+
+/* شاشات متوسطة: من 768px إلى 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .caption .Myimg {
+    width: 40%;
   }
+
+  .caption .myInfo {
+    margin: 50px;
+    padding-top: 40px;
+  }
+
+  .about .content {
+    right: 40px;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+  }
+
+  .skills .skills-card {
+    width: 45%;
+  }
+
+  .cont {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .social ul li img{
+  width: 30%;
+}
 }

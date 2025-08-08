@@ -3,7 +3,7 @@ import Education from "./Education";
 import Skills from "./Skills";
 
 export default function AboutNav() {
-  const [activeSection, setActiveSection] = useState("education"); // default section
+  const [activeSection, setActiveSection] = useState("skills"); // default section
 
   return (
     <div className="about-nav">
