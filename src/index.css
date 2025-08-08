@@ -356,7 +356,7 @@ button:hover {
   .caption .Myimg {
     margin-left: 50px;
     width: 70%;
-
+    height: 600px;
   }
   .caption .Myimg img{
     margin-bottom: 10px;
